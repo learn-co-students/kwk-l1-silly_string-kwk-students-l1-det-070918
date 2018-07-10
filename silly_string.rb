@@ -23,9 +23,7 @@ puts lowercased_phrase
 
 big_word = "supercalifragilisticexpialidocious"
 
-"supercalifragilisticexpialidocious"+"wow"+"mom"
-
-letter_count = big_word.length # Put a .length after big_word and use a String method.
+letter_count = big_word.size # Put a .size after big_word and use a String method.
 
 
 
@@ -33,7 +31,7 @@ puts "There are #{letter_count} in #{big_word}"
 
 # Challenge 5: Add "wow" and "mom" to big_word
 
-bigger_word = big_word.length # Use String concatenation to add "wow" and "mom" to big_word
+bigger_word = big_word+"wow"+"mom" # Use String concatenation to add "wow" and "mom" to big_word
 
 new_letter_count = bigger_word.size
 
@@ -50,6 +48,6 @@ sentence = "Astounding aardvarks, arguably an ancient animal, always ate apples 
 
 # Swap all `A` for `O`, as well as all `a` for `o`. You need to chain `gsub`s.
 
-sentence = sentence # .gsub("A","O").gsub("a"."o")
+sentence = sentence.gsub("A","O").gsub("a","o")
 
 puts sentence 
